@@ -1,0 +1,1 @@
+# QR-detection-and-payload-dropping
