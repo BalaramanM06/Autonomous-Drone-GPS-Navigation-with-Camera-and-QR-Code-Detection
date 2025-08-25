@@ -84,3 +84,5 @@ The following images show the YOLOv5 model successfully detecting QR codes in a 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/20bf21ed-99da-4ea8-aea4-b215ed173baf" alt="image" width="438" height="425">
 </p>
+
+Model Link : https://drive.google.com/file/d/1Y0zNGDfbzlk5tGGunuk28jBPAkppyKwL/view?usp=sharing
