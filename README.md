@@ -2,6 +2,7 @@
 
 This repository contains the complete software stack for an autonomous drone designed to navigate to a specific GPS location, perform a systematic aerial search, and use computer vision to detect and decode QR codes. We had issues with mounting the Pi camera on the drone.
 
+Model Link : https://drive.google.com/file/d/1Y0zNGDfbzlk5tGGunuk28jBPAkppyKwL/view?usp=sharing
 ---
 
 ## 📝 Project Overview
@@ -85,4 +86,3 @@ The following images show the YOLOv5 model successfully detecting QR codes in a 
   <img src="https://github.com/user-attachments/assets/20bf21ed-99da-4ea8-aea4-b215ed173baf" alt="image" width="438" height="425">
 </p>
 
-Model Link : https://drive.google.com/file/d/1Y0zNGDfbzlk5tGGunuk28jBPAkppyKwL/view?usp=sharing
