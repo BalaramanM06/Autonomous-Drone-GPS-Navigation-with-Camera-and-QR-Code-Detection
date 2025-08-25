@@ -1,6 +1,6 @@
-# Autonomous Drone GPS Navigation with Camera and QR Code Detection
+# Autonomous-Drone-GPS-Navigation-with-Camera-and-QR-Code-Detection
 
-This repository contains the complete software stack for an autonomous drone designed to navigate to a specific GPS location, perform a systematic aerial search, and use computer vision to detect and decode QR codes.We had issues with mounting the Pi camera on the drone.
+This repository contains the complete software stack for an autonomous drone designed to navigate to a specific GPS location, perform a systematic aerial search, and use computer vision to detect and decode QR codes. We had issues with mounting the Pi camera on the drone.
 
 ---
 
@@ -24,7 +24,7 @@ The primary goal of this project is to create an unmanned aerial system capable 
 ### Hardware
 
 * **Drone Platform:** A multi-rotor UAV (e.g., quadcopter).
-* **Flight Controller:** A Pixhawk or similar controller running ArduPilot/PX4 firmware.
+* **Flight Controller:** A Pixhawk or similar controller running ArduPilot/PX4 firmware (e.g., Cube Orange).
 * **Companion Computer:** A Raspberry Pi (or equivalent single-board computer) connected to the flight controller via a serial (UART) connection.
 * **Camera:** A high-resolution Raspberry Pi Camera Module.
 
@@ -50,16 +50,32 @@ The project is segmented into three key Python scripts:
 
 ---
 
+## 🚀 Installation and Setup
+
+1.  **Hardware Connection:**
+    * For detailed instructions on connecting the **Cube Orange flight controller to the Raspberry Pi**, please refer to this: [Raspberry-pi-and-cube-orange-connection](https://github.com/Iswarya-Singaram/Raspberry-pi-and-cube-orange-connection).
+    * Ensure the camera module is securely connected to the Raspberry Pi's CSI port.
+
+2.  **Software Configuration:**
+    * Clone this repository to your Raspberry Pi.
+    * Install all the required Python libraries listed under the [Software](#software) section.
+    * **YOLOv5 Model:** This project requires a custom-trained YOLOv5 weights file named **`best.pt`**. Place this file in the root directory of the project or update the file path in `qr.py` to point to its location.
+    * Update the serial port (e.g., `/dev/ttyAMA0`) and baud rate in `gps.py` to match your hardware setup.
+    * Set your target `destination_lat` and `destination_lon` in `gps.py`.
+
+---
 
 ## ▶️ Execution
 
 To launch the autonomous mission, run the main script from the terminal:
 
-~~~
+```bash
 python3 gps.py
-~~~
+```
 
-Testing Images:
+### Testing Images:
+
+The following images show the YOLOv5 model successfully detecting QR codes in a test environment.
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e86f100d-eeab-41dd-a1dc-4e5bf0292638" />
 
