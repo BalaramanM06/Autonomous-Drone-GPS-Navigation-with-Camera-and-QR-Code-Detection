@@ -3,6 +3,7 @@
 This repository contains the complete software stack for an autonomous drone designed to navigate to a specific GPS location, perform a systematic aerial search, and use computer vision to detect and decode QR codes. We had issues with mounting the Pi camera on the drone.
 
 Model Link : https://drive.google.com/file/d/1Y0zNGDfbzlk5tGGunuk28jBPAkppyKwL/view?usp=sharing
+
 ---
 
 ## 📝 Project Overview
